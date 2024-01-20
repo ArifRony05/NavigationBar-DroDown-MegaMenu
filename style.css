@@ -1,0 +1,134 @@
+/* common css start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+ list-style-type: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+li a{
+    letter-spacing: 2px;
+    margin-right: 1rem;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+html,body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+/* common css end */
+/* navigation bar start */
+nav{
+    background-color: #010127;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+}
+.brand_section{
+    display: flex;
+    align-items: center;
+}
+.logo span {
+    font-size: 2.5rem;
+}
+.brand_title{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.brand_title a{
+    text-transform: none;
+}
+.left_menu> ul{
+    display: flex;
+    margin-left: 2rem;
+}
+.left_menu> ul>li:hover >a{
+text-decoration: underline;
+color:#FFFF00 ;
+}
+.right_menu{
+    margin-left: auto;
+}
+.right_menu> ul{
+    display: flex;
+    align-items: center;
+}
+/* navigation bar end */
+/* Dropdown Design start */
+.Dropdown{
+    position: relative;
+}
+.dropdown_element {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 3px 0px 1px #33333369;
+    width: 200px;
+    right: 0;
+    display: none;
+}
+.Dropdown:hover .dropdown_element{
+    display: block;
+}
+.dropdown_element li{
+    padding: .5rem 1rem;
+}
+.dropdown_element li:hover{
+    background:#ddd;
+}
+.dropdown_element li a{
+    color: #333;
+    font-size: .9rem;
+    font-weight: bold;
+}
+.divider{
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+/* Dropdown Design end */
+/* Mega Menu design start */
+.mega_menu{
+    position: relative;
+    padding: 1rem 0;
+}
+.mega_menu_container{
+    position: absolute;
+    top: 100%;
+    width: 700px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: none;
+    padding: 1rem 2rem;
+}
+.catagory h2{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.catagory li{
+    padding: .5rem 0;
+}
+.catagory li:hover a{
+    text-decoration: underline;
+}
+.catagory a{
+    color: #000;
+    font-size: .8rem;
+}
+.mega_menu:hover .mega_menu_container{
+    display: flex;
+    gap: 53px;
+}
+/* Mega Menu design end */
